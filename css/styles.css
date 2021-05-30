@@ -28,6 +28,10 @@ body {
   text-align: center;
   width: 100%;
 }
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
   text-decoration: none;
@@ -37,11 +41,12 @@ body {
 
 .container {
   width: 1200px;
-  width: 100%;
   align-items: center;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
+
 /* 
 ul {
 
@@ -61,10 +66,7 @@ ul {
 
 .nav {
   display: flex;
-  justify-content: space-between;
-  margin-left: 215px;
-  margin-right: 215px;
-  padding-left: 15px;
+  align-items: center;
 }
 .logo {
   color: var(--accent-color);
@@ -140,7 +142,9 @@ ul {
   background-color: var(--accent-color-background);
   color: var(--white-color);
   text-decoration: none;
-  padding: 200px 452px;
+  margin: 0;
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 .slogan {
   font-size: 44px;
@@ -148,14 +152,15 @@ ul {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+  align-items: center;
 }
 
-/* Hero section:  part 2 - discription itams */
+/* Hero benefits:  part 2 - discription itams */
 
 .hero-discr {
   display: flex;
-  margin: 94px 215px 0 215px;
   flex-basis: calc((100%-3 * 30px) / 3);
+  margin-top: 94px;
 }
 
 .hero-container {
@@ -181,7 +186,7 @@ ul {
 
 /* section presentation */
 .images-container {
-  margin: 94px 215px 0 215px;
+  margin-top: 94px;
 }
 .about {
   font-size: 36px;
@@ -226,7 +231,7 @@ ul {
 }
 .team {
   display: flex;
-  margin: 50px 215px 0 215px;
+  margin-top: 50px;
   padding-left: 15px;
   padding-right: 15px;
   flex-basis: calc((100%-3 * 30px) / 3);
@@ -310,8 +315,9 @@ ul {
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 50px 215px 94px 215px;
+  margin-top: 50px;
+  margin-bottom: 94px;
+  align-items: center;
   flex-basis: calc((100%-3 * 30px) / 3);
 }
 
@@ -320,6 +326,16 @@ ul {
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
   box-shadow: 0px 4px 4px 0px #00000040;
+}
+.projects:nth-child(3n + 1) {
+  margin-right: 30px;
+}
+.projects:nth-child(3n + 2) {
+  margin-right: 30px;
+}
+
+.projects:nth-child(3n + 1) {
+  margin-right: auto;
 }
 .web {
   color: var(--primary-text-color);
@@ -354,15 +370,10 @@ ul {
 .footer {
   background-color: var(--accent-color-background);
   text-decoration: none;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-.footer-container {
-  padding-top: 60px;
-  padding-left: 15px;
-  margin-left: 215px;
   text-align: left;
+  padding-top: 60px;
 }
+
 .logo-footer {
   font-weight: bold;
   font-family: Raleway;
