@@ -161,7 +161,7 @@ ul {
 }
 .hero-discr {
   display: flex;
-  flex-basis: calc((100%-3 * 30px) / 3);
+  flex-basis: calc((100%-3 * 30px) / 4);
 }
 
 .hero-container {
@@ -196,7 +196,7 @@ ul {
 }
 .images {
   display: flex;
-  flex-basis: calc((100%-2 * 30px) / 2);
+  flex-basis: calc((100%-2 * 30px) / 3);
 }
 .images .image-item {
   display: block;
@@ -232,7 +232,7 @@ ul {
   margin-top: 50px;
   padding-left: 15px;
   padding-right: 15px;
-  flex-basis: calc((100%-3 * 30px) / 3);
+  flex-basis: calc((100%-3 * 30px) / 4);
 }
 .team-member {
   background-color: var(--white-color);
@@ -315,7 +315,7 @@ ul {
   margin-top: 50px;
   margin-bottom: 94px;
   align-items: center;
-  flex-basis: calc((100%-2 * 30px) / 2);
+  flex-basis: calc((100%-2 * 30px) / 3);
   width: 1200px;
 }
 
